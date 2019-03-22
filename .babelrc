@@ -1,6 +1,15 @@
 {
-    "presets": [
+  "presets": [
+    [
       "next/babel",
-      "@zeit/next-typescript/babel"
+      {
+        "preset-env": {
+          "targets": {
+            "node": "8"
+          }
+        }
+      }
     ]
-  }
+  ],
+  "plugins": ["@babel/plugin-transform-typescript"]
+}
